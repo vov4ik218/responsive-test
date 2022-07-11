@@ -1,0 +1,50 @@
+.header,
+.blog,
+.posts,
+.load-more,
+.footer {
+    padding-left: calc(50vw - 585px);
+    padding-right: calc(50vw - 585px);
+
+    @media screen and (max-width: 1200px) {
+        padding-left: calc(50vw - 480px);
+        padding-right: calc(50vw - 480px);
+    }
+    @media screen and (max-width: 992px) {
+        padding-left: calc(50vw - 365px);
+        padding-right: calc(50vw - 365px);
+    }
+    @media screen and (max-width: 768px) {
+        padding-left: calc(50vw - 350px);
+        padding-right: calc(50vw - 350px);
+    }
+    @media screen and (max-width: 576px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.backgroud {
+
+    &__title {
+        padding-left: calc(50vw - 585px);
+    padding-right: calc(50vw - 585px);
+
+    @media screen and (max-width: 1200px) {
+        padding-left: calc(50vw - 480px);
+        padding-right: calc(50vw - 480px);
+    }
+    @media screen and (max-width: 992px) {
+        padding-left: calc(50vw - 365px);
+        padding-right: calc(50vw - 365px);
+    }
+    @media screen and (max-width: 768px) {
+        padding-left: calc(50vw - 350px);
+        padding-right: calc(50vw - 350px);
+    }
+    @media screen and (max-width: 576px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    }
+}
