@@ -9,21 +9,8 @@ body {
     font-size: 16px;
 }
 
-a,
-ul,
-li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-p,
-h3 {
-    margin: 0;
-    padding: 0;
-    color: #565656;
+p  {
+    margin: 0; 
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
@@ -38,9 +25,12 @@ h3 {
 }
 
 h3 {
+    margin: 0;
+    padding: 0;
     font-size: 23px;
     font-weight: 500;
-    letter-spacing: 10%;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .header {
@@ -129,6 +119,8 @@ h3 {
 .menu {
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
     gap: 42px;
 
     @media screen and (max-width: 768px) {
@@ -142,6 +134,7 @@ h3 {
     }
 
     &__item {
+        list-style: none;
 
         @media screen and (max-width: 768px) {
             margin: -20px;
@@ -158,6 +151,8 @@ h3 {
     &__link {
         position: relative;
         color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
         font-weight: 400;
         font-size: 14px;
 
@@ -232,14 +227,12 @@ h3 {
         max-width: 770px;
         font-size: 48px;
         font-weight: 600;
-        letter-spacing: 5%;
 
         @media screen and (max-width: 768px) {
             color: #000000;
             max-width: 575px;
             font-size: 36px;
             font-weight: 600;
-            letter-spacing: 5%;
         }
     }
 }
@@ -282,7 +275,7 @@ h3 {
     min-width: 300px;
 
     @media screen and (max-width: 992px) {
-        width: 50%;
+        width: 100%;
     }
 
     &_width {
@@ -304,6 +297,13 @@ h3 {
     }
 }
 
+.blog-photo {
+    width: 50%;
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
 
 .blog-img {
     object-fit: contain;
@@ -329,6 +329,7 @@ h3 {
     &__techno-profile {
         margin-bottom: 30px;
         max-width: 370px;
+        color: #7B7B7B;
     }
 
     &__skills-profile {
@@ -338,10 +339,15 @@ h3 {
 
     &__date-profile {
         margin-bottom: 50px;
-
+        color: #7B7B7B;
+    
         @media screen and (max-width: 768px) {
             margin-bottom: 40px;
         }
+    }
+
+    &__text-profile {
+        color: #565656;
     }
 }
 
@@ -359,24 +365,25 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &__view {
+        color: #7B7B7B;
+    }
 }
 
 .posts-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    //flex-wrap: wrap;
     gap: 30px;
 
     @media screen and (max-width: 992px) {
-        //flex-direction: column;
         flex-wrap: wrap;
     }
 
     @media screen and (max-width: 576px) {
         flex-direction: column;
         flex-wrap: wrap;
-        width: 200%;
     }
 
     &_flex-scnd-line {
@@ -387,7 +394,7 @@ h3 {
         @media screen and (max-width: 576px) {
             flex-direction: column;
             flex-wrap: wrap;
-            width: 200%;
+            //width: 100%;
         }
     }
 }
@@ -418,6 +425,7 @@ h3 {
         justify-content: space-between;
         margin: 25px 0;
         font-size: 12px;
+        color: #7B7B7B;
     }
 
     &__skills {
@@ -427,6 +435,7 @@ h3 {
 
     &__text {
         font-size: 16px;
+        color: #565656;
     }
 
     &_m-width {
@@ -436,7 +445,7 @@ h3 {
             display: flex;
             max-width: none;
             flex-direction: column;
-            width: 50%;
+            width: 100%;
         }
     }
 }
@@ -444,7 +453,7 @@ h3 {
 
 
 .post-conteiner {
-    width: 50%;
+    width: 100%;
 
     &_basis {
         width: 100%;
@@ -504,6 +513,7 @@ h3 {
     &__text {
         max-width: 470px;
         padding: 0 0 35px 0;
+        color: #565656;
 
         &_padding-btm {
             padding: 0;
